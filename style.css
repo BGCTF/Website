@@ -18,6 +18,8 @@ body {
     position: sticky;
     top: 0;
     z-index: 1000;
+    display: flex;
+    justify-content: center;
 }
 
 .navbar ul {
@@ -25,7 +27,7 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center;
+    gap: 15px;
 }
 
 .navbar li {
@@ -50,6 +52,43 @@ body {
     color: white;
 }
 
+/* Waffle Icon for Mobile */
+.navbar-toggle {
+    display: none;
+    font-size: 24px;
+    color: white;
+    padding: 14px 20px;
+    cursor: pointer;
+}
+
+/* Hide the menu by default on mobile */
+.navbar-menu {
+    display: flex;
+}
+
+/* Media query to make navbar responsive */
+@media (max-width: 768px) {
+    .navbar {
+        justify-content: flex-start; /* Aligns items to the left when in mobile mode */
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar-menu {
+        display: none; /* Hide menu items initially */
+        flex-direction: column;
+        width: 100%;
+    }
+    .navbar-menu.active {
+        display: flex; /* Show menu items when active */
+    }
+    .navbar-toggle {
+        display: block; /* Show waffle icon on mobile */
+    }
+}
 
 /* Header */
 header {

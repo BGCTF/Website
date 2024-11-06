@@ -8,13 +8,20 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+    <script src="script.js"></script>
+    
     <nav class="navbar">
-      <ul>
-        <li><a href="./index.html">Home</a></li>
-        <li><a href="./AboutUs.html">About Us</a></li>
-        <li><a href="./HandoutPage.html">Handouts</a></li>
-        <li><a href="./index.html#contact">Contact</a></li>
-      </ul>
+        <div class="navbar-toggle" onclick="toggleMenu()">
+            &#9776; <!-- Unicode for waffle/hamburger icon -->
+        </div>
+        <div class="navbar-menu">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./AboutUs.html">About Us</a></li>
+                <li><a href="./HandoutPage.html">Handouts</a></li>
+                <li><a href="./index.html#contact">Contact</a></li>
+            </ul>
+        </div>
     </nav>
 
     <header>
@@ -69,6 +76,5 @@
         <p>INSERT EMAIL PNG HERE</p>
     </section>
 
-    <script src="script.js"></script>
 </body>
 </html>
