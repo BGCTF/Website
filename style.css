@@ -206,7 +206,7 @@ a:hover {
 /* Styles for smaller screens */
 @media (max-width: 600px) {
     .icon {
-        width: 28px; /* Adjust the width as needed for mobile */
+        width: 16px; /* Adjust the width as needed for mobile */
     }
 }
 
