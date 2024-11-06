@@ -5,7 +5,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #121212;
+    background-color: #4f2c1d;
     color: #e0e0e0;
     line-height: 1.6;
 }
@@ -70,7 +70,7 @@ header p {
 .header-image {
     display: block;
     margin: 1rem auto;
-    max-width: 150px; /* Adjust size as needed */
+    max-width: 150px;
     height: auto;
 }
 
@@ -81,6 +81,7 @@ section {
     max-width: 800px;
     border-radius: 8px;
     background-color: #1e1e1e;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
 }
 
 section h2 {
