@@ -67,6 +67,13 @@ header p {
     color: #b0bec5;
 }
 
+.header-image {
+    display: block;
+    margin: 1rem auto;
+    max-width: 150px; /* Adjust size as needed */
+    height: auto;
+}
+
 /* Section Styling */
 section {
     padding: 1.5rem;

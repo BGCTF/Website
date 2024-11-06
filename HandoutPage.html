@@ -3,108 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page Under Construction</title>
-    <style>
-        /* Basic Reset */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-        }
-
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f3f3f3;
-            color: #333;
-        }
-
-        .container {
-            text-align: center;
-            max-width: 600px;
-        }
-
-        .hacker-icon {
-            font-size: 120px;
-        }
-
-        .headline {
-            font-size: 2em;
-            color: #333;
-            margin: 20px 0;
-        }
-
-        .subheadline {
-            font-size: 1.2em;
-            color: #777;
-            margin-bottom: 40px;
-        }
-
-        .loading-bar {
-            width: 80%;
-            background-color: #ddd;
-            height: 15px;
-            margin: 20px auto;
-            border-radius: 10px;
-            overflow: hidden;
-            position: relative;
-        }
-
-        .loading-bar .progress {
-            width: 40%;
-            height: 100%;
-            background-color: #4caf50;
-            animation: load 2s infinite;
-        }
-
-        @keyframes load {
-            0% { width: 0; }
-            50% { width: 60%; }
-            100% { width: 0; }
-        }
-
-        .back-button {
-            display: inline-block;
-            margin-top: 30px;
-            padding: 10px 20px;
-            background-color: #007bff;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 1em;
-            transition: background-color 0.3s;
-        }
-
-        .back-button:hover {
-            background-color: #0056b3;
-        }
-
-        .footer-note {
-            font-size: 0.9em;
-            color: #555;
-            margin-top: 20px;
-        }
-    </style>
+    <title>CTF Club Handouts</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <div class="hacker-icon">💻🔧</div>
-        <div class="headline">Oops! This Page is Still in the Works...</div>
-        <div class="subheadline">Our cyber elves are coding away to bring you this page soon!</div>
-        
-        <!-- Loading Animation -->
-        <div class="loading-bar">
-            <div class="progress"></div>
-        </div>
+    <nav class="navbar">
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./AboutUs.html">About Us</a></li>
+            <li><a href="./HandoutPage.html">Handouts</a></li>
+            <li><a href="./index.html#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-        <!-- Return Button -->
-        <a href="/" class="back-button">Back to Safety</a>
-        
-        <!-- Footer Message -->
-        <div class="footer-note">Pardon our dust! Check back soon for more exciting content.</div>
-    </div>
+    <header>
+        <h1>BGSU CTF Club - Daily Handouts</h1>
+        <p>Explore and practice with our daily handouts!</p>
+    </header>
+
+    <section class="handouts">
+        <h2>Handouts</h2>
+        <ul class="handout-list">
+            <li>
+                <a href="./handouts/handout_template.html">Handout 0: Example Handout</a>
+                <p>Brief description or date of the handout.</p>
+            </li>
+            <li>
+                <a href="path/to/handout2.pdf">Handout 2: Basics of Cryptography</a>
+                <p>Brief description or date of the handout.</p>
+            </li>
+            <!-- Add more handouts as needed -->
+        </ul>
+    </section>
 </body>
 </html>
