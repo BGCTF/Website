@@ -185,11 +185,11 @@ a:hover {
     }
 }
 
+/* General styles for desktop and larger screens */
 .contact {
     text-align: center;
     padding: 20px;
 }
-
 
 .icon {
     width: 38px; 
@@ -202,6 +202,14 @@ a:hover {
     transform: scale(1.1);
     transition: 0.3s ease;
 }
+
+/* Styles for smaller screens */
+@media (max-width: 600px) {
+    .icon {
+        width: 28px; /* Adjust the width as needed for mobile */
+    }
+}
+
 
 
 
