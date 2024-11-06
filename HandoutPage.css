@@ -1,16 +1,15 @@
-/* General Page Styling */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden;
+}
+
 body {
     font-family: Arial, sans-serif;
     background-color: #4f2c1d;
     color: #e0e0e0;
     line-height: 1.6;
-    text-align: center;
-}
-
-/* Header Styling */
-header {
-    padding: 2rem;
-    background-color: #1e1e1e;
 }
 
 /* Navbar Styling */
@@ -30,7 +29,7 @@ header {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center;
+    gap: 15px;
 }
 
 .navbar li {
@@ -55,6 +54,50 @@ header {
     color: white;
 }
 
+/* Waffle Icon for Mobile */
+.navbar-toggle {
+    display: none;
+    font-size: 24px;
+    color: white;
+    padding: 14px 20px;
+    cursor: pointer;
+}
+
+/* Hide the menu by default on mobile */
+.navbar-menu {
+    display: flex;
+}
+
+/* Media query to make navbar responsive */
+@media (max-width: 768px) {
+    .navbar {
+        justify-content: flex-start; /* Aligns items to the left when in mobile mode */
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar-menu {
+        display: none; /* Hide menu items initially */
+        flex-direction: column;
+        width: 100%;
+    }
+    .navbar-menu.active {
+        display: flex; /* Show menu items when active */
+    }
+    .navbar-toggle {
+        display: block; /* Show waffle icon on mobile */
+    }
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 2rem;
+    background-color: #1e1e1e;
+}
 
 header h1 {
     font-size: 2.5rem;
@@ -64,6 +107,13 @@ header h1 {
 header p {
     font-size: 1.1rem;
     color: #b0bec5;
+}
+
+.header-image {
+    display: block;
+    margin: 1rem auto;
+    max-width: 150px;
+    height: auto;
 }
 
 /* Handouts Section */

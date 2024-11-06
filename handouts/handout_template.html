@@ -1,19 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-M2LQ14DGBC"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-M2LQ14DGBC');
+    </script>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Handout Title - BGSU CTF Club</title>
     <link rel="stylesheet" href="./handoutPost.css"> <!-- Link to external CSS file -->
 </head>
 <body>
+    <script src="../script.js"></script>
+
     <nav class="navbar">
-        <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="../AboutUs.html">About Us</a></li>
-            <li><a href="../HandoutPage.html">Handouts</a></li>
-            <li><a href="../index.html#contact">Contact</a></li>
-        </ul>
+        <div class="navbar-toggle" onclick="toggleMenu()">
+            &#9776; <!-- Unicode for waffle/hamburger icon -->
+        </div>
+        <div class="navbar-menu">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../AboutUs.html">About Us</a></li>
+                <li><a href="../HandoutPage.html">Handouts</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+        </div>
     </nav>
 
     <main class="content">

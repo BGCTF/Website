@@ -1,15 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-M2LQ14DGBC"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-M2LQ14DGBC');
+    </script>
+    
     <link rel="icon" href="./Favicon.ico" type="image/x-icon">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cybersecurity CTF Club</title>
+    <title>BGSU CTF Club</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <script src="script.js"></script>
-    
+
     <nav class="navbar">
         <div class="navbar-toggle" onclick="toggleMenu()">
             &#9776; <!-- Unicode for waffle/hamburger icon -->
@@ -31,9 +41,9 @@
     </header>
 
     <div class="announcement-banner">
-      <div class="scrolling-text">
-          <p>💻🎉 Next CTF challenge on Friday! Get ready to hack! 🎉💻</p>
-      </div>
+    <div class="scrolling-text">
+        <p>💻🎉 Next CTF challenge on Friday! Get ready to hack! 🎉💻</p>
+    </div>
     </div>
 
 
@@ -61,20 +71,21 @@
     <section class="resources">
         <h2>Resources & Tools</h2>
         <ul>
-            <li><a href="https://www.wireshark.org/docs/">Wireshark</a> - Network protocol analyzer.</li>
-            <li><a href="https://github.com/NationalSecurityAgency/ghidra/tree/master/GhidraDocs">Ghidra</a> - Reverse engineering tool.</li>
+            <li><a href="https://github.com/BGCTF/Kindle" target="_blank">Kindle</a> - Our custom CTF tool installer script. Script kiddies love this one ;)</li>
+            <li><a href="https://www.wireshark.org/docs/" target="_blank">Wireshark</a> - Network protocol analyzer.</li>
+            <li><a href="https://github.com/NationalSecurityAgency/ghidra/tree/master/GhidraDocs" target="_blank">Ghidra</a> - Reverse engineering tool.</li>
             <!-- Add more resources -->
         </ul>
     </section>
 
     <!-- Contact Section -->
-    <section class="contact">
+    <section class="contact" id="contact">
         <h2>Contact Us</h2>
         <p>If you have questions or need support, reach out via our Discord channel or Email.</p>
         <br>
         <p>INSERT DISCORD PNG HERE</p>
         <p>INSERT EMAIL PNG HERE</p>
     </section>
-
+    
 </body>
 </html>

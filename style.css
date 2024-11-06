@@ -184,3 +184,46 @@ a:hover {
         transform: translateX(-400%);
     }
 }
+
+
+/*  FOR FUN  */
+/* Snow container styling */
+.snow {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 9999;
+}
+
+/* Styling individual snowflakes */
+.snowflake {
+    position: absolute;
+    top: -10px;
+    color: #fff;
+    font-size: 1em;
+    opacity: 0.8;
+    animation: fall linear infinite;
+}
+
+/* Snowflake fall animation */
+@keyframes fall {
+    to {
+        transform: translateY(100vh);
+        opacity: 0;
+    }
+}
+
+/* Create random snowflakes */
+@for $i from 1 through 100 {
+    .snowflake:nth-child(#{$i}) {
+        left: #{random(100)}vw;
+        animation-duration: #{random(10) + 5}s;
+        animation-delay: #{random(10)}s;
+        font-size: #{random(24) + 5}px;
+    }
+}
+
