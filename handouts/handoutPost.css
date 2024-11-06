@@ -8,7 +8,7 @@
 /* Body Styling */
 body {
     font-family: Arial, sans-serif;
-    background-color: #121212;
+    background-color: #4f2c1d;
     color: #e0e0e0;
     line-height: 1.6;
     display: flex;
@@ -19,10 +19,13 @@ body {
 /* Navbar Styling */
 .navbar {
     background-color: #333;
+    padding-top: env(safe-area-inset-top, 0);
     overflow: hidden;
     position: sticky;
     top: 0;
     z-index: 1000;
+    display: flex;
+    justify-content: center;
 }
 
 .navbar ul {
