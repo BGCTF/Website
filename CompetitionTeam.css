@@ -1,0 +1,158 @@
+
+/* Navbar Styling */
+.navbar {
+    background-color: #333;
+    padding-top: env(safe-area-inset-top, 0);
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    display: block;
+    padding: 14px 20px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+.navbar a:hover {
+    background-color: #ddd; 
+    color: black; 
+}
+
+.navbar a:active {
+    background-color: #FD5000;
+    color: white;
+}
+
+/* Waffle Icon for Mobile */
+.navbar-toggle {
+    display: none;
+    font-size: 24px;
+    color: white;
+    padding: 14px 20px;
+    cursor: pointer;
+}
+
+/* Hide the menu by default on mobile */
+.navbar-menu {
+    display: flex;
+}
+
+/* Media query to make navbar responsive */
+@media (max-width: 768px) {
+    .navbar {
+        justify-content: flex-start; /* Aligns items to the left when in mobile mode */
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar-menu {
+        display: none; /* Hide menu items initially */
+        flex-direction: column;
+        width: 100%;
+    }
+    .navbar-menu.active {
+        display: flex; /* Show menu items when active */
+    }
+    .navbar-toggle {
+        display: block; /* Show waffle icon on mobile */
+    }
+}
+
+
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #4f2c1d;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+  
+  .roster-container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+  
+/* Header */
+header {
+    text-align: center;
+    padding: 2rem;
+    background-color: #1e1e1e;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #FD5000;
+}
+
+header p {
+    font-size: 1.1rem;
+    color: #b0bec5;
+}
+
+.header-image {
+    display: block;
+    margin: 1rem auto;
+    max-width: 150px;
+    height: auto;
+}
+    
+/* Member card styling */
+.member-card {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.member-photo {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.member-info {
+    padding: 20px;
+    flex: 1;
+}
+
+/* Alternate layout for every other member */
+.member-card.reverse {
+    flex-direction: row-reverse !important;
+}
+
+h2 {
+    margin-top: 0;
+    color: #555;
+}
+
+p {
+    color: #777;
+    line-height: 1.5;
+}
+  
