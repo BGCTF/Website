@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handout Form</title>
+</head>
+<body>
+    <h2>Handout Form</h2>
+    <form id="handoutForm">
+        <label>Question 1:</label>
+        <input type="text" id="question1" placeholder="Your answer here"><br><br>
+        <label>Question 2:</label>
+        <input type="text" id="question2" placeholder="Your answer here"><br><br>
+        <button type="button" onclick="saveResponses()">Save Responses</button>
+        <button type="button" onclick="loadResponses()">Load Saved Responses</button>
+    </form>
+
+    <script>
+        function saveResponses() {
+            const q1 = document.getElementById('question1').value;
+            const q2 = document.getElementById('question2').value;
+            localStorage.setItem('q1', q1);
+            localStorage.setItem('q2', q2);
+            alert('Responses saved!');
+        }
+
+        function loadResponses() {
+            document.getElementById('question1').value = localStorage.getItem('q1') || '';
+            document.getElementById('question2').value = localStorage.getItem('q2') || '';
+            alert('Responses loaded!');
+        }
+    </script>
+</body>
+</html>
