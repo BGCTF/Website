@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-M2LQ14DGBC"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-M2LQ14DGBC');
+    </script>
+
+    <link rel="icon" href="./Favicon.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handout Title - BGSU CTF Club</title>
+    <link rel="stylesheet" href="./handoutPost.css"> <!-- Link to external CSS file -->
+</head>
+<body>
+    <script src="../script.js"></script>
+
+    <nav class="navbar">
+        <div class="navbar-toggle" onclick="toggleMenu()">
+            &#9776; <!-- Unicode for waffle/hamburger icon -->
+        </div>
+        <div class="navbar-menu">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../HandoutPage.html">Handouts</a></li>
+                <li><a href="../CompetitionTeam.html">Competition Team</a></li>
+                <li><a href="../AboutUs.html">About Us</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="content">
+        <article class="handout">
+            <h2 class="handout-title">Network Malware Forensics</h2>
+            <p class="handout-date">Posted on: Novemver 12, 2024</p>
+
+            <section class="handout-content">
+                <p>This week is all about understanding how Malware looks under the hood in network traffic. This handout will be extremely informaitonal 
+                    for those who are interested in Incident Response, Malware Analysis, Reverse Engineering, and Network Analysis
+                </p>
+                
+                <br>
+                <h3>Step 1: Time for CARNAGE</h3>
+                <p>Open the Room by clicking <a href="https://tryhackme.com/r/room/c2carnage" target="_blank">HERE</a>.</p>
+
+                <br>
+                <h3>Step 2: Download the Wireshark file</h3>
+                <p>Download the <a href="https://www.malware-traffic-analysis.net/2021/09/24/index.html" target="_blank">2021-09-24-Squirrelwaffle-with-Qakbot-and-Cobalt-Strike.pcap.zip</a> file </p>
+                <p>The password is: infected_20210924</p>
+
+                <br>
+                <h3>Don't Forget</h3>
+                <ul>
+                    <li>Ask for Help!</li>
+                    <li>Utilize Google!</li>
+                    <li>Maybe ChatGPT to understand Wireshark querying? Ehhh?</li>
+                </ul>
+            </section>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 BGSU CTF Club. All rights reserved.</p>
+    </footer>
+</body>
+</html>
